@@ -23,7 +23,7 @@ class Text implements Message
                 'id'=>$this->recipientId
             ],
             'message' => [
-                'test' => $messageText,
+                'text' => $messageText,
                 'metadata' => 'DEVELOPER_DEFINED_METADATA'
             ]
         ];
