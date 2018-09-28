@@ -39,7 +39,7 @@ class ListTemplateTest extends TestCase
                     'type' => 'template',
                     'payload' => [
                         'template_type' => 'list',
-                        'buttons' => [
+                        'elements' => [
                             [
                                 'title' => 'produto1',
                                 'subtitle' => 'teste_imagem',
