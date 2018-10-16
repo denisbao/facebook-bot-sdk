@@ -35,7 +35,7 @@ class Bot
             call_user_func_array([$type, $method], $params);
         }
         foreach ($elements as $element){
-            $type->add($elements);
+            $type->add($element);
         }
         $message = $type->message($message);
         return $this->callSendApi($message);
