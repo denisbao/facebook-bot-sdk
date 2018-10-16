@@ -9,7 +9,7 @@ class Bot
     private $senderId;
     private $pageAccessToken;
 
-    public function setSenderId(string $senderId)
+    public function setSender(string $senderId)
     {
         $this->senderId = $senderId;
         return $this;
