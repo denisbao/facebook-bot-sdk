@@ -6,6 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class GetStartedButtonTest extends TestCase
 {
+    //PARA TESTE: vendor/bin/phpunit tests/integration/GetStartedButtonTest.php --filter testAddGetStartedButton
     public function testAddGetStartedButton()
     {
         $data = (new GetStartedButton())->add('iniciar');
@@ -16,7 +17,7 @@ class GetStartedButtonTest extends TestCase
 
     }
 
-
+    //PARA TESTE: vendor/bin/phpunit tests/integration/GetStartedButtonTest.php --filter testRemoveGetStartedButton
     public function testRemoveGetStartedButton()
     {
         $data = (new GetStartedButton())->remove();

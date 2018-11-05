@@ -9,8 +9,9 @@ use CodeBot\Build\Solid;
 
 class BotTest extends TestCase
 {
-    private $pageAccessToken = 'EAAEditZB3cqcBAPEpqjlggSVUaDKFMELkwfYnhYSnZAyshD6WF4SulPO7sXwUZA7kiBd7jBMDHJJZBnLArOixLRuYYhrQqbaXD9kfaTgdQqZBTxHbbiUfDyLOZC38MVeJX537KYf32brqwyUdiCc306QljhVdUXbH1c2YRZCb76QQupHRDal0K7';
+    private $pageAccessToken = 'COLOCAR_O_ACCESS_TOKEN';
 
+    // PARA TESTE:vendor/bin/phpunit tests/integration/BotTest.php --filter testAddMenu
     public function testAddMenu()
     {
 
@@ -52,6 +53,7 @@ class BotTest extends TestCase
         $this->AssertTrue(true);
     }
 
+    // PARA TESTE:vendor/bin/phpunit tests/integration/BotTest.php --filter testRemoveMenu
     public function testRemoveMenu()
     {
         $bot = Solid::factory();
@@ -61,6 +63,7 @@ class BotTest extends TestCase
         $this->AssertTrue(true);
     }
 
+    // PARA TESTE:vendor/bin/phpunit tests/integration/BotTest.php --filter testAddGetStartedButton
     public function testAddGetStartedButton()
     {
         $bot = Solid::factory();
@@ -70,6 +73,7 @@ class BotTest extends TestCase
         $this->AssertTrue(true);
     }
 
+    // PARA TESTE:vendor/bin/phpunit tests/integration/BotTest.php --filter testRemoveGetStartedButton
     public function testRemoveGetStartedButton()
     {
         $bot = Solid::factory();
