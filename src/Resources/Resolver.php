@@ -33,7 +33,6 @@ class Resolver
         if (!isset($interfaces[ResourceInterface::class])) {
             throw new \Exception('Class must be implements' . ResourceInterface::class . 'interface');
         }
-
         $object = new $resource;
         return $object($sender, $bot);
     }
